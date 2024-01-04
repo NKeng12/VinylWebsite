@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vinyl Stuff-Login</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  </head>
+      <body>
+    <section class="header">
+      <nav>
+        <a href="Home.html" class='homelink'> <h1>The Vinyl collection</h1></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="featured.html">FEATURED</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="https://everyrecordtellsastory.com/">BLOG</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class='loginform'>
+
+
+  <form action="action_page.php" method="post">
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="button" onclick="show_alert()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container-2" style="background-color:#f1f1f1">
+      <div class="resetbtn"><button type="reset" class="cancelbtn">Cancel</button></div>
+      <div class="create"><a href="create.html" class='createlink'><h3>Create account</h3></a></div>
+
+  </div>
+</form>
+<script type="text/javascript">
+      function show_alert(){
+          alert("Welcome " + document.getElementById("uname").value);
+      }
+</script>
+</section>
+
+<section class="sectionfoot">
+<div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a><a href="https://twitter.com/home"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">The Vinyl Collection © 2022</p>
+        </footer>
+    </div>
+    </section>
+</body>
+</html>
